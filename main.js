@@ -1,4 +1,4 @@
-const botoes = document.querySelectorAll(".botoes");
+const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 for (let i=0; i < botoes.length; i++){
     botoes [i].onclick = function(){
@@ -15,7 +15,7 @@ const tempoObjetivo1 = new Date ("2026-06-01T00:00:00");
 const tempoObjetivo2 = new Date ("2025-09-27T19:00:00");
 const tempoObjetivo3 = new Date ("2027-12-12T00:00:00");
 const tempoObjetivo4 = new Date ("2025-09-29T06:00:00");
-const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4]
+const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 function atualizaCronometro (){
     for (let i = 0; i < contadores.length; i++){
         document.getElementById ("dias"+i).textContent = calculaTempo(tempos [i])[0];
